@@ -1,5 +1,17 @@
 # fullstack-agents
 **Work in progress**: Agentic Orchestration to automate end-to-end fullstack workflow: from gathering requirement to deployment and maintainance.
+
+## Note
+- More agents (avengers) will be added soon (e.g. for documentation, deployment, monitoring, etc)
+- Open to suggestions/discussion
+- Memory and context to be added later
+- Currently working on knowledge base
+- Testing on personal projects
+
+## How to use
+- copy `.agents` folder to your root of the project and claude code/gemini/codex will pick it up (If it doesn't, paste this line in your main file - _`look at the contents of ".agents" folder present at the root of this project`_.
+- Replace the mocked skill files from the respective sources.
+
 ## Structure
 ``` 
 main-project/
@@ -12,9 +24,9 @@ main-project/
 │   │   ├── TONY_STARK_DEVELOPER.md
 │   │   └── HULK_TESTER.md
 │   ├── skills/
-│   │   ├── GRILL_ME.md           <-- by mattpocock/grill-me
-│   │   ├── PONYTAIL.md           <-- by DietrichGebert/ponytail
-│   │   └── CAVEMAN.md            <-- by JuliusBrussee/caveman
+│   │   ├── GRILL_ME.md           <-- by mattpocock/grill-me (mocked here install from original source)
+│   │   ├── PONYTAIL.md           <-- by DietrichGebert/ponytail (mocked here install from original source)
+│   │   └── CAVEMAN.md            <-- by JuliusBrussee/caveman (mocked here install from original source)
 │   ├── state/
 │   │   ├── pipeline_status.md
 │   │   ├── requirements_spec.md
@@ -62,7 +74,3 @@ Compliance & Guardrails                                     Senior Fullstack Dev
 ```
 ## n8n Workflow
 <img width="1039" height="377" alt="image" src="https://github.com/user-attachments/assets/74e9c847-f20d-4dbb-85e0-03fff2ed81db" />
-
-## Note
-- More agents (avengers) will be added soon (e.g. for documentation, deployment, monitoring, etc)
-- Open to suggestions/discussion 
